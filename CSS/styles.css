@@ -11,3 +11,38 @@ img {
     border-radius: 50%;
     margin-top: 20px;
 }
+#bienvenida {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 2s ease, transform 2s ease;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
+  color: #333;
+}
+
+#bienvenida.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Overlay centrado */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #161515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #40af27;
+  transition: opacity 2s ease;
+  z-index: 9999;
+}
+
+/* Ocultar contenido al inicio */
+.oculto {
+  display: none;
+}
